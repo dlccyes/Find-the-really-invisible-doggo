@@ -25,14 +25,14 @@ while not done:
 	if dis(mouse_pos[0],mouse_pos[1],x,y) <= 100:
 		pygame.mixer.music.load('niao.mp3')
 		pygame.mixer.music.play(0)
-		if dis(mouse_pos[0],mouse_pos[1],x,y) <= 50:
+		if dis(mouse_pos[0],mouse_pos[1],x,y) <= 30:
 			if pygame.mouse.get_pressed()[0] == 1:
 				pygame.mixer.music.load('masterdoggo.mp3')
 				pygame.mixer.music.play(0)
 				print('YOU FOUND ME!!!!!')
 				pygame.time.delay(4000)
 				generate_new_xy = True
-	elif 100 < dis(mouse_pos[0],mouse_pos[1],x,y) <= 250:
+	elif 100 < dis(mouse_pos[0],mouse_pos[1],x,y) <= 400:
 		pygame.mixer.music.load('niaoooo.mp3')
 		pygame.mixer.music.play(0)
 	else:
